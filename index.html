@@ -61,6 +61,7 @@
 
    section#sobre,
    section#projetos,
+   section#cadastro,
    section#contato {
       background-color: #fff;
       padding: 20px;
@@ -73,6 +74,48 @@
       text-align: center;
       margin-top: 20px;
    }
+  h3 {
+    text-align: center;
+  }
+
+
+
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  label,
+  input{
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type=email],
+  input[type="tel"]{
+   width: 95%;
+   padding:10px;
+   border: 1px solid #ccc
+   border-radius: 5px
+  }
+   input[type="submit"]{
+       width: 100%;
+   padding:10px;
+   border: none;
+   border-radius: 5px;
+   background-color:#007bff;
+   color: #fff;
+   cursor:pointer;
+   }
+   input[type="submit"]:hover{
+    background-color: #0056b3;
+
+
+   }
+
 </style>
 
 
@@ -91,6 +134,7 @@
          <ul>
             <li><a href="#sobre">Sobre Mim</a></li>
             <li><a href="#projetos">Projetos</a></li>
+             <li><a href="#cadastro">Cadastros</a></li>           
             <li><a href="#contato">Contatos</a></li>
          </ul>
       </nav>
@@ -119,7 +163,24 @@
          <li>Projetos 2: <a href="#">Descrição do Projetos 2</a></li>
       </ul>
    </section>
+   <section id="cadastro">
+<h3>Cadastro de Pessoas</h2>
+  <form>
+    <label>Nome </label>
+    <input type="text" id="nome" name="nome" required>
+    <label> Email </label>
+    <input type="Email" id="email" name="email" required>
+    <label> Telefone </label>
+    <input type="tel" id="telefone" name="telefone" required>
+    <input type="submit" value= "Cadastrar">
 
+
+   </form>
+   </body>
+   </html>
+
+
+   </section>
 
 
 
@@ -129,9 +190,7 @@
             href="mailto:willian_m_fabricio@estudante.sesisenai.org.br">willian_m_fabricio@estudante.sesisenai.org.br</a>.
       </p>
    </section>
-
-
-
+   
 
    <footer>
       <p>&copy; @2024 - Willian Marchezini</p>
@@ -139,4 +198,3 @@
 </body>
 
 
-</html>
